@@ -1,0 +1,42 @@
+.banner-container {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.banner-text {
+    /* text-align: center;  */
+    position: absolute;
+    /* background-color: red; */
+    margin: auto;
+    width: 70%;
+    max-width: 900px;
+    top: 30%;
+    left: 0;
+    right: 0;
+    font-family: Lato;
+}
+.title h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 60px; 
+    letter-spacing: 10px;
+}
+.title p {
+    font-weight: 300;
+    color: var(--gray-white);
+}
+.about {
+    width: 90%;
+    max-width: 550px;
+    position: relative;
+    /* margin: auto; */
+}
+.about p {
+    text-align: justify;  
+    color: var(--gray-white);
+    margin: 2rem 0;
+}
