@@ -1,29 +1,103 @@
+/*-------- CSS Variables --------*/
+@import url(./assets/_variable.css);
 
-:root {
-  --color-darkest: #222831;
-  --color-dark: #393e46;
-  --color-highligh: #32e0c4;
-  --color-light: #eeeeee;
-}
+/*-------- Global Variables --------*/
+@import url(./assets/_globals.css);
 
+/*-------- Layout --------*/
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
   list-style-type: none;
   text-decoration: none;
-  color: var(--color-light); 
   box-sizing: border-box;
+  font-family: var(--roboto);
   background-color: transparent;
-  font-family: 'Montserrat', sans-serif;
 }
-body {
-  background: var(--color-darkest);
+.body {
+  font-family: var(--roboto);
+  font-size: var(--normal-font-size);
+  color: var(--text-color2);
+  background-color: var(--background-color);
 }
-.star-bg {
-  overflow: hidden; 
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  z-index: -1;
-  height: 100vh;
-  width: 100%;
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
+.container-fluid,
+.container-fluid h1,
+.container-fluid h2,
+.container-fluid h3,
+.container-fluid p,
+.container-fluid table,
+.container-fluid button,
+.container-fluid a
+.container-fluid Link { 
+  color: var(--text-white);
+}
+.border-pink {
+  border: 2px solid black;
+  border-radius: 3px;
+  border-color: var(--highlight-color);
+  color: var(--highlight-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.border-pink:hover {
+  color: var(--text-white);
+  text-decoration: none;
+  background-color: var(--highlight-color);
+  transition: 0.3s ease-in-out;
+}
+.grey-pill {
+  border: 1px solid var(--background-light);
+  background-color: var(--background-light);
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.bd-grid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+/*-------- Scroll to Top --------*/
+#scroll-to-top {
+  font-size: 2rem;
+  position: fixed;
+  /* display: flex; */
+  right: 30px;
+  bottom: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--highlight-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); 
+  color: var(--text-white);
+  outline: none;
+  cursor: pointer;
+
+  border: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+#scroll-to-top.active {
+  background-color: var(--highlight-color);
+  bottom: 30px;
+  pointer-events: auto;
+  opacity: 1;
+}
+#scroll-to-top:active {
+  background-color: var(--highlight-dark);
+  color: var(--border-color);
+}
+#scroll-to-top i {
+  padding-top: .5rem;
+}
+

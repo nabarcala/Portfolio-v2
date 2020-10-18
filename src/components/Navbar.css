@@ -1,69 +1,51 @@
 
-:root {
-    --color-darkest: #222831;
-    --color-dark: #393e46;
-    --color-highligh: #32e0c4;
-    --color-light: #eeeeee;
-}
-
-.navbar {
-    height: 10vh;
-    display: flex;
+/*-------- Navbar Header --------*/
+.header-area {
     justify-content: space-between;
-    align-items: center;
-    padding: 25px 10%;
+}
+.navbar {
+    background-color: var(--background-dark);
+    padding: 1rem 6rem;
+    /* display: flex;
+    flex-direction: row; */
+}
+.navbar-brand {
+    font-size: 1.2rem;
     background-color: transparent;
-    z-index: 100;
-    position: relative;
+    color: var(--text-white); 
+    padding: .3rem .8rem;
+    text-align: center;
 }
-.navbar-logo {
-    cursor: pointer;
-    margin-right: auto;
-    padding-top: 7px;
-    font-family: var(--font-fam);
-    font-weight: 500;
-    font-size: 17px;
-    color: var(--off-white);
-}
-.nav-menu {
-    list-style: none; 
-    /* padding-top: 18px; */
-}
-.nav-item {
-    display: inline-block;
-    padding: 0px 20px;
-}
-.nav-item a {
-    transition: all 0.3s ease 0s; 
-    text-decoration: none;
-}
-.nav-item a:hover {
-    cursor: pointer;
-    color: var(--highlight-color);
-}
-Button { 
-    margin-left: 1rem; 
+.nav-link {
+    color: var(--text-white);
+    font-size: 1.2rem;
 }
 
-/* .navbar {
-    width: 100%;
-    height: 3rem;
-    display: flex;
-    background: red;
-    position: absolute;
-    align-items: center;
+@media only screen and (min-width: 770px) {
+    .nav-list {
+        display: flex;
+        padding-top: .3rem;
+        
+    }
+    .nav-item {
+        /* margin: 0 1rem; */
+        margin-right: 3rem;
+        /* margin-bottom: 0; */
+    }
+    
+    .nav-link:hover {
+        color: var(--highlight-color); 
+    }
+    .nav-link:hover::after {
+        /* position: absolute;
+        content: "";
+        width: 100%;
+        height: 0.18rem;
+        left: .8rem;
+        top: 2rem; */
+        color: var(--highlight-color);
+    }
+    .nav-toggle {
+        display: none;
+    }
 }
-.navbar-container {
-    margin: 3rem;
-    display: flex;
-    flex-direction: row;
-}
-.nav-menu {
-    display: flex;
-    flex-direction: row;
-}
-.nav-item {
-    padding: 0 1rem; 
-    color: #fff;
-    text-transform: uppercase;
-} */
