@@ -1,0 +1,39 @@
+/*-------- CSS Variables --------*/
+:root {
+    --header-height: 3rem;
+    --font-semi: 600;
+    --roboto: 'Roboto', sans-serif;
+}
+
+/*-------- Colors --------*/
+:root {
+    --background-color: #222831;
+    --background-dark: #1c2027;
+    --background-light: #333b47;
+    --highlight-color: #dc789d; 
+    --highlight-dark: #bd4a74;
+    --text-white: #fff;
+
+    --first-color: #f4cacb;
+    --second-color: #00537a;
+    --third-color: #6494ac;
+
+    --text-color1: #fedfdf;
+    --text-color2: #fef8f8;
+    --border-color: #999;
+}
+
+/*-------- Fonts --------*/
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 0.938rem;
+}
+@media screen and (min-width: 768px){
+    :root {
+        --big-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+    }
+}

@@ -1,0 +1,40 @@
+
+/*-------- About Me --------*/
+.about-me {
+    background: var(--background-dark);
+    color: var(--text-white);
+    padding: 3rem 0;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-me-left {
+    padding-right: 3rem;
+}
+.about-me h5 {
+    color: var(--highlight-color);
+    margin-bottom: 1.3rem;
+    /* font-size: 1.2rem; */
+}
+.about-me-left h2 {
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    margin-bottom: 1rem;
+}
+/* .about-me-left p {
+    line-height: 1.7rem;
+    font-size: 1rem;
+} */
+.about-me-right {
+    padding-left: 1rem;
+}
+.about-me-right h1 {
+    font-size: 2.5rem; 
+    margin-bottom: .7rem;
+}
+.about-me-right h2 {
+    font-size: 1.3rem;
+    color: var(--highlight-color);
+}
+

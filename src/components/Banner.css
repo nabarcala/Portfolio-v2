@@ -1,42 +1,39 @@
-.banner-container {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+
+/*-------- Banner --------*/
+.flexbox {
+    display: flex; 
+    height: 100%;
 }
-.banner-text {
-    /* text-align: center;  */
-    position: absolute;
-    /* background-color: red; */
+.content {
+    height: 100vh; 
+    margin: auto 2rem;
+}
+.span-6 {
+    flex-basis: 50%;
+}
+.about-desc {
+    display: flex;
+    text-align: justify;
+}
+.inner-desc {
     margin: auto;
-    width: 70%;
-    max-width: 900px;
-    top: 30%;
-    left: 0;
-    right: 0;
-    font-family: Lato;
+    padding: 0 7rem;
+    padding-bottom: 20%;
 }
-.title h1 {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 60px; 
-    letter-spacing: 10px;
+.about-desc h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
 }
-.title p {
-    font-weight: 300;
-    color: var(--gray-white);
+.about-desc h3{
+    /* font-size: 3.5rem; */
+    margin-bottom: .5rem;
 }
-.about {
-    width: 90%;
-    max-width: 550px;
-    position: relative;
-    /* margin: auto; */
-}
-.about p {
-    text-align: justify;  
-    color: var(--gray-white);
-    margin: 2rem 0;
+/* .about-desc p{
+    font-size: 1rem;
+    line-height: 1.7rem;
+} */
+.span-6 img {
+    height: auto;
+    padding-top: 15%;
+    width: 100%;
 }
