@@ -26,7 +26,7 @@ export default function Banner() {
                 </div>
     
                 <div class="span-6 about-img">
-                    <img src="./assets/images/remote-work-2.png" alt=""/>
+                    <img src={require("../images/remote-work-2.png")} alt="home page image"/>
                 </div>
             </div>
         </div>
