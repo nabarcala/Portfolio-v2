@@ -1,8 +1,6 @@
 import React, {Component} from 'react'
-// import {Link} from 'react-router-dom';
 import {Link} from 'react-scroll';
 
-import { Button } from './Button';
 import './Navbar.css'
 
 export default class NavBar extends Component {

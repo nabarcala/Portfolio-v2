@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link} from 'react-scroll';
 
 import './Banner.css';
 // import '../App.css';
@@ -18,7 +18,13 @@ export default function Banner() {
                             Come check out some of my other projects below.
                         </p>
                         <div className="">
-                            <Link to="#portfolio" className="button border-pink">
+                            <Link 
+                            className="button border-pink"
+                            to="portfolio" 
+                            activeClass="active" 
+                            spy="" 
+                            smooth={true}
+                            duration={500}>
                                 Portfolio
                             </Link>
                         </div>
