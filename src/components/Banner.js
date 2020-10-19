@@ -6,10 +6,10 @@ import './Banner.css';
 
 export default function Banner() {
     return (
-        <div class="content">
-            <div class="flexbox">
-                <div class="span-6 about-desc">
-                    <div class="inner-desc">
+        <div className="content" id="banner">
+            <div className="flexbox">
+                <div className="span-6 about-desc">
+                    <div className="inner-desc">
                         <h1>Natacha Barcala </h1>
                         <h3>Software Developer, Web Developer
                         </h3>
@@ -17,15 +17,15 @@ export default function Banner() {
                             I primarily use Python and Flask to create web applications.
                             Come check out some of my other projects below.
                         </p>
-                        <div class="">
-                            <Link to="" class="button border-pink">
+                        <div className="">
+                            <Link to="#portfolio" className="button border-pink">
                                 Portfolio
                             </Link>
                         </div>
                     </div>
                 </div>
     
-                <div class="span-6 about-img">
+                <div className="span-6 about-img">
                     <img src={require("../images/remote-work-2.png")} alt="home page image"/>
                 </div>
             </div>

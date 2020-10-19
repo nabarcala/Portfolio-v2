@@ -1,4 +1,6 @@
-import React, {useRef} from 'react';
+import React, {useRef, useEffect, useState} from 'react';
+import Switch from 'react-bootstrap/esm/Switch';
+import { Route } from 'react-router-dom';
 
 import '../App.css';
 import About from '../components/About';
@@ -34,10 +36,17 @@ function Home () {
             <button className="scroll-to-top" id="scroll-to-top" ref={scrollRef} onClick={smoothScroll}>
                 <i className='bx bx-up-arrow-alt' ></i>
             </button>
-            <Banner />
-            <About />
-            <Services />
-            <Portfolio />
+            <Switch>
+                <Route path="/" exact component={Banner}  />
+                <Route path="/" exact component={About} />
+                <Route path="/" exact component={Services} />
+                <Route path="/" exact component={Portfolio}  />
+                {/* <Banner /> */}
+                {/* <About />
+                <Services />
+                <Portfolio /> */}
+            </Switch>
+            
             {/* <shooting-stars image="./star.png" height="'10px'" width="10" min-speed="10" max-speed="50" num="10"></shooting-stars> */}
         </main>
     )
