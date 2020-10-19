@@ -13,11 +13,20 @@ export default class NavBar extends Component {
                 <header className='header-area'>
                     <nav className='navbar navbar-expand-md navbar-dark sticky-top'>
                         <div>
-                            <Link to='' className='navbar-brand border-pink'>NB Portfolio</Link>
+                            <Link 
+                            to="banner" 
+                            activeClass="active" 
+                            spy="" 
+                            smooth={true}
+                            offset={-500} 
+                            duration={0}
+                            className='navbar-brand border-pink'>
+                                NB Portfolio
+                            </Link>
                         </div>
                         <div className='nav-menu collapse navbar-collapse' id='nav-menu'>
                             <ul className="navbar-nav ml-auto nav-list">
-                                <li className="nav-item active">
+                                {/* <li className="nav-item active">
                                     <Link 
                                     to="banner" 
                                     className="nav-link" 
@@ -27,7 +36,7 @@ export default class NavBar extends Component {
                                     duration={500}>
                                         Home
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li className="nav-item">
                                     <Link 
                                     to="about-me" 
