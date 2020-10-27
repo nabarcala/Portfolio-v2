@@ -41,7 +41,7 @@ export default function Services() {
                             <p> I enjoy creating artworks in my free time. 
                                 This includes traditional and digital artwork. 
                                 I have also created simple leather wallets! </p>
-                                <a href="https://www.etsy.com/shop/TachasWorkshop">More Coming Soon</a>
+                                <a href="https://www.etsy.com/shop/TachasWorkshop"><i class='bx bxl-etsy'></i></a>
                         </div>
                     </div>
                 </div>

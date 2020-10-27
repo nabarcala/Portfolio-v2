@@ -18,14 +18,18 @@ export default function Portfolio() {
 
                 { project.map((project, index) => (
                     <div className="portfolio-container" key={index}>
-                        <Image publicId={project.image} cloudName="nbrcl"></Image> 
+                        
+                        <a href={project.website !== "" && project.website || project.github}>
+                            <Image publicId={project.image} cloudName="nbrcl"></Image> 
+                        </a>
+
                         <div className="project">
                             <div className="project-i">
                                 <h3>{project.title}</h3>
                                 <ul className="links-project">
 
                                     { project.website !== "" &&
-                                        <a className="border-pink link" href={project.website}>Live</a> 
+                                        <a className="border-pink link" href={project.website}>Live</a>
                                     } 
 
                                     { project.github !== "" &&
@@ -44,6 +48,10 @@ export default function Portfolio() {
                                 </ul>
                             </div>
                         </div>
+
+
+
+                        
                     </div>
                 ))};
             </div>
