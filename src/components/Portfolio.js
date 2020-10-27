@@ -19,7 +19,7 @@ export default function Portfolio() {
                 { project.map((project, index) => (
                     <div className="portfolio-container" key={index}>
                         
-                        <a href={project.website !== "" && project.website || project.github}>
+                        <a href={project.website !== "" ? project.website : project.github}>
                             <Image publicId={project.image} cloudName="nbrcl"></Image> 
                         </a>
 
