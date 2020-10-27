@@ -1,13 +1,10 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
+import {Image} from 'cloudinary-react';
 
 import project from '../projects-data';
 import './Portfolio.css';
 
 export default function Portfolio() {
-    const count = "";
-
     return (
         <section className="portfolio" id="portfolio">
             <div className="container">
@@ -21,18 +18,17 @@ export default function Portfolio() {
 
                 { project.map((project, index) => (
                     <div className="portfolio-container" key={index}>
-                        {/* <img src={require("")} alt=""/> */}
                         <Image publicId={project.image} cloudName="nbrcl"></Image> 
                         <div className="project">
                             <div className="project-i">
                                 <h3>{project.title}</h3>
                                 <ul className="links-project">
 
-                                    { project.website != "" &&
+                                    { project.website !== "" &&
                                         <a className="border-pink link" href={project.website}>Live</a> 
                                     } 
 
-                                    { project.github != "" &&
+                                    { project.github !== "" &&
                                         <a className="border-pink link" href={project.github}>GitHub</a> 
                                     }
 

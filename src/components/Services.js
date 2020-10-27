@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
 import './Services.css';
 
@@ -12,7 +11,7 @@ export default function Services() {
                     <h5 className="small-header">Services</h5>
                     <h3 className="big-header">What I Can Offer</h3>
                 </div>
-                <div className="services-main">
+                <div className="services-main"> 
                     <div className="single-service">
                         <div className="bg"></div>
                         <div className="services-inner">
@@ -21,7 +20,7 @@ export default function Services() {
                             <p> I am most experienced with Python. 
                                 This website was created using Python and 
                                 the Flask framework! </p>
-                                <a>More Coming Soon</a>
+                                <a href="#/">More Coming Soon</a>
                         </div>
                     </div>
                     <div className="single-service active">
@@ -31,7 +30,7 @@ export default function Services() {
                             <h3>Web Developer</h3>
                             <p> Besides Python, I have used HTML, CSS, and jQuery, 
                                 along with Bootstrap, the popular CSS Framework.</p>
-                                <a>More Coming Soon</a>
+                                <a href="#/">More Coming Soon</a>
                         </div>
                     </div>
                     <div className="single-service">

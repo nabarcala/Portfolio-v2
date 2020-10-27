@@ -25,6 +25,9 @@
     color: var(--text-white);
     font-size: 1.2rem;
 }
+.mobile-menu-only {
+    display: none;
+}
 
 @media only screen and (min-width: 770px) {
     .nav-list {
@@ -57,10 +60,15 @@
 @media only screen and (max-width: 770px) {
     .navbar {
         display: flex;
+        width: 100%;
+        position: fixed;
+    }
+    .navbar-brand {
+        z-index: 100000;
     }
     .nav-menu {
         position: fixed;
-        top: 4.5rem;
+        top: 0;
         right: -100%;
         width: 60%;
         height: 100%;
@@ -93,8 +101,20 @@
     .nav-toggle {
         color: var(--text-white);
         font-size: 1.5rem;
+        cursor: pointer;
     }
     .show {
         right: 0;
+    }
+    .mobile-menu-only {
+        margin-top: 5rem;
+        display: block;
+    }
+    .nav-exit {
+        /* margin: 1.5rem 0 -2rem 2rem;  */
+        content: "";
+        display: flex;
+        right: 0;
+        font-size: 1.5rem;
     }
 }

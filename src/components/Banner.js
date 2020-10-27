@@ -11,8 +11,7 @@ export default function Banner() {
                 <div className="span-6 about-desc">
                     <div className="inner-desc">
                         <h1>Natacha Barcala </h1>
-                        <h3>Software Developer, Web Developer
-                        </h3>
+                        <h3>Software Developer, Web Developer</h3>
                         <p> Computer Science graduate seeking a Software Developer role, located in Florida.
                             I primarily use Python and Flask to create web applications.
                             Come check out some of my other projects below.
@@ -22,7 +21,6 @@ export default function Banner() {
                             className="button border-pink"
                             to="portfolio" 
                             activeClass="active" 
-                            spy="" 
                             smooth={true}
                             duration={500}>
                                 Portfolio
@@ -32,7 +30,7 @@ export default function Banner() {
                 </div>
     
                 <div className="span-6 about-img">
-                    <img src={require("../images/remote-work-2.png")} alt="home page image"/>
+                    <img src={require("../images/remote-work-2.png")} alt="home page"/>
                 </div>
             </div>
         </div>

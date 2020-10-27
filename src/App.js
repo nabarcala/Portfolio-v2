@@ -1,10 +1,8 @@
-import React, {useRef, useEffect, useState} from 'react';
-import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React, {useRef} from 'react';
+import { BrowserRouter as Router} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import NavBar from './components/NavBar';
-import Home from './pages/Home';
 import './components/Stars.css';
 
 import './App.css';
@@ -12,7 +10,6 @@ import About from './components/About';
 import Banner from './components/Banner';
 import Portfolio from './components/Portfolio';
 import Services from './components/Services';
-import { Container } from 'react-bootstrap';
 
 
 function App() {
@@ -39,7 +36,7 @@ function App() {
   };
   return (
     <div>
-      <head>
+      <div>
           {/* <!-- BootStrap --> */} 
           {/* <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/> */}
 
@@ -48,49 +45,23 @@ function App() {
 
           {/* <!-- Add fancyBox CSS --> */}
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-      </head>
+      </div>
           
-      <body className='body site-main'>
+      <div className='body site-main'>
         <button className="scroll-to-top" id="scroll-to-top" ref={scrollRef} onClick={smoothScroll}>
           <i className='bx bx-up-arrow-alt' ></i>
         </button>
         <Router>
-          <NavBar />
-          
+          <NavBar /> 
+
           <Banner />
           <About />
           <Services />
           <Portfolio />
 
-            {/* <Route path="/" exact component={Banner} onEnter={function(){
-              document.getElementById("banner").scrollIntoView();
-            }} />
-            <Route path="/" exact component={About} onEnter={function(){
-              document.getElementById("about-me").scrollIntoView();
-            }} />
-            <Route path="/services" exact component={Services} onEnter={function(){
-              document.getElementById("services").scrollIntoView();
-            }} />
-            <Route path="/" exact component={Portfolio} onEnter={function(){
-              document.getElementById("portfolio").scrollIntoView();
-            }} /> */}
-
-          {/* <div className="app-container">
-            <Route path="/" exact component={Container} />
-            <Route path="/about" exact component={Container} />
-            <Route path="/services" exact component={Container} />
-            <Route path="/portfolio" exact component={Container}  />
-          </div> */}
-            
-          {/* <Switch>
-            <Route path="/" exact component={Banner} />
-            <Route path="" exact component={About} />
-            <Route path="/services" exact component={Services} />
-            <Route path="/portfolio" exact component={Portfolio}  />
-          </Switch> */}
         </Router>
-      </body>  
-      </div>
+      </div>  
+    </div>
   );
 }
 
