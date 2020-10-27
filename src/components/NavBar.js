@@ -31,7 +31,7 @@ export default function NavBar() {
     return (
         <div>
             <header className='header-area'>
-                <nav className='navbar navbar-expand-md navbar-dark sticky-top'>
+                <nav className='navbar navbar-expand-md navbar-light sticky-top'>
                     <div>
                         <Link 
                         to="banner" 

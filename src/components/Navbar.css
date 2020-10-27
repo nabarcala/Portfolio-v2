@@ -4,8 +4,10 @@
     justify-content: space-between;
 }
 .navbar {
-    background-color: var(--background-dark);
+    background-color: transparent;
     padding: 1rem 6rem;
+    position: absolute; 
+    width: 100%;
     /* display: flex;
     flex-direction: row; */
 }
@@ -13,7 +15,7 @@
 .navbar-brand:hover {
     font-size: 1.2rem;
     background-color: transparent;
-    color: var(--text-white); 
+    color: var(--text-dark); 
     padding: .3rem .8rem;
     text-align: center;
     cursor: pointer;
@@ -22,7 +24,7 @@
     cursor: pointer; 
 }
 .nav-link {
-    color: var(--text-white);
+    color: var(--text-dark); 
     font-size: 1.2rem;
 }
 .mobile-menu-only {
@@ -73,7 +75,6 @@
         width: 60%;
         height: 100%;
         padding-right: 2rem;
-        background-color: var(--background-dark);
         transition: .5s; 
     }
     .nav-item {
@@ -82,7 +83,7 @@
     }
     .nav-link {
         position: relative;
-        color: var(--text-white);
+        color: var(--text-dark);
         font-size: 1.1rem;
     }
     .nav-link:hover {
@@ -99,7 +100,7 @@
         background-color: var(--highlight-color);
     }
     .nav-toggle {
-        color: var(--text-white);
+        color: var(--text-dark);
         font-size: 1.5rem;
         cursor: pointer;
     }
