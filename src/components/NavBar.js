@@ -40,7 +40,7 @@ export default function NavBar() {
                         offset={-500} 
                         duration={0}
                         className='navbar-brand border-pink'>
-                            NB Portfolio
+                            N. Barcala
                         </Link>
                     </div>
                     <div className='nav-menu collapse navbar-collapse' id='nav-menu' ref={navRef}>

@@ -3,47 +3,39 @@
 .flexbox {
     display: flex; 
     height: 100%;
+    width: 100%;
 }
 .content {
-    height: 100vh; 
-    top: -10rem;
-    
-    /* margin: auto 2rem; */
-    /* background: red; */
+    height: 100vh;
+    padding-top: 5rem;
     background-image: url(../images/pexels-stephan-seeber-1054289.jpg);
     background-size: cover;
 }
-.span-6 {
-    flex-basis: 50%;
-}
+
 .about-desc {
-    /* flex-basis: 60%; */
+    width: 100%;
     padding: 0 15rem;
     display: flex;
     text-align: center;
-    justify-content: center;
 }
 .inner-desc {
     margin: auto;
     padding: 0 7rem;
     padding-bottom: 20%;
 }
-.about-desc h1{
+.about-desc h2{
     font-size: 3.5rem;
+}
+.about-desc h1{
+    font-size: 5rem;
     margin-bottom: 1rem;
 }
 .about-desc h3{
-    /* font-size: 3.5rem; */
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
 }
-/* .about-desc p{
-    font-size: 1rem;
-    line-height: 1.7rem;
-} */
-.span-6 img {
-    height: auto;
-    padding-top: 15%;
-    width: 100%;
+.banner-button {
+    /* background: red; */
+    padding-top: 3rem;
 }
 .button {
     cursor: pointer;
@@ -51,9 +43,6 @@
 
 /*-------- Media Queries --------*/
 @media only screen and (max-width: 1380px) {
-    .span-6 img {
-        padding-top: 30%;
-    }
     .about-desc {
         width: 100%;
         min-width: 100%;
@@ -62,13 +51,11 @@
 }
 @media only screen and (max-width: 1100px) {
     .content {
-        height: auto !important;
+        height: 80vh;
+        padding-top: 0;
     }
     .about-desc {
         margin-top: 5rem;
-    }
-    .span-6 img {
-        padding-top: 20%;
     }
     .inner-desc h3 {
         font-size: 1.3rem;
@@ -82,8 +69,9 @@
     #scroll-to-top {
         display: none;
     }
-    .about-img {
-        display: none;
+    .content {
+        height: 70vh; 
+        padding-top: 0;
     }
     .about-desc {
         width: 100%;
@@ -94,8 +82,5 @@
     }
     .inner-desc p {
         text-align: center;
-    }
-    .content {
-        height: auto !important;
     }
 }

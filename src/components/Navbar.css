@@ -11,20 +11,25 @@
     /* display: flex;
     flex-direction: row; */
 }
-.navbar-brand,
-.navbar-brand:hover {
+.navbar-brand {
     font-size: 1.2rem;
     background-color: transparent;
-    color: var(--text-dark); 
-    padding: .3rem .8rem;
+    color: var(--highlight-color) !important; 
+    margin-top: 0.5rem; 
+    padding: .5rem .8rem;
     text-align: center;
+    cursor: pointer;
+}
+.navbar-brand:hover {
+    color: var(--highlight-color) !important;  
+    background-color: transparent !important; 
     cursor: pointer;
 }
 .nav-item {
     cursor: pointer; 
 }
 .nav-link {
-    color: var(--text-dark); 
+    color: var(--text-dark) !important; 
     font-size: 1.2rem;
 }
 .mobile-menu-only {
