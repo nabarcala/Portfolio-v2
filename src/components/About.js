@@ -23,7 +23,7 @@ export default function About() {
                     <div className="span-6 about-me-right">
                         <h1 className="big-header">Contact Me</h1>
                         <p><span>Let's Talk</span></p>
-                        <h2><a href="mailto:nabarcala@gmail.com" className="footer-link">nabarcala@gmail.com</a></h2>
+                        <h2><a href="mailto:nabarcala@gmail.com" className="footer-link">nabarcala@gmail.com</a></h2> 
                     </div>
                 </div>
             </div>

@@ -17,8 +17,9 @@
 .body {
   font-family: var(--roboto);
   font-size: var(--normal-font-size);
-  color: var(--text-color2);
-  background-color: var(--background-color);
+  color: var(--text-dark);
+  /* background-color: var(--background-color); */
+  /* background-image: /images/pexels-stephan-seeber-1054289.jpg; */
 }
 .container {
   width: 90%;
@@ -33,7 +34,7 @@
 .container-fluid button,
 .container-fluid a
 .container-fluid Link { 
-  color: var(--text-white);
+  color: var(--text-dark); 
 }
 .border-pink {
   border: 2px solid black;
@@ -81,7 +82,7 @@
   color: var(--text-white);
   outline: none;
   cursor: pointer;
-
+  z-index: 9000; 
   border: none;
   opacity: 0;
   pointer-events: none;
@@ -101,3 +102,9 @@
   padding-top: .5rem;
 }
 
+/*-------- Media Queries --------*/
+@media only screen and (max-width: 990px) {
+  #scroll-to-top {
+      display: none;
+  }
+}
