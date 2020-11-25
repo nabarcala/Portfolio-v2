@@ -7,16 +7,21 @@ export default [
         description: "Currently in Development. A simple painting app that can be easily accessed from the web! Draw with a bunch of different colors and shapes then save your amazing artwork.",
         github: "https://github.com/nabarcala/Online-Canvas",
         website: "https://www.natsketch.com/",
-        tech: ["React", "JavaScript", "HTML5", "CSS"],
-        image: "canvas.gif"
-    },
+        tech: ["React", "JavaScript", "HTML5", "CSS", "Canvas"],
+        image: "canvas.gif",
+        imgStart: true,
+        top: true,
+    }, 
     {
         title: "Portfolio V1",
         description: "First iteration of my personal portfolio created with Python and Flask.",
         github: "https://github.com/nabarcala/Python-and-Flask-Ex",
         website: "https://nb-portfolio.herokuapp.com/",
         tech: ["Python", "Flask"],
-        image: "v1.png"
+        // image: "v1-mockup.png",
+        image: "v1.png",
+        imgStart: false,
+        top: false,
     },
     {
         title: "Current Weather Web App",
@@ -24,7 +29,10 @@ export default [
         github: "https://github.com/nabarcala/Weather-App",
         website: "https://weather-app-nb.netlify.app/",
         tech: ["JavaScript", "HTML5", "CSS3", "Open Weather Map API"],
-        image: "current-weather.png"
+        // image: "current-weather-mockup.png",
+        image: "current-weather.png",
+        imgStart: true,
+        top: false,
     },
     {
         title: "Medication Tracker",
@@ -32,7 +40,9 @@ export default [
         github: "https://github.com/nabarcala/Medication-Tracker-Web-App",
         website: "",
         tech: ["PHP", "HTML", "CSS", "JavaScript"],
-        image: "med-tracker.png"
+        image: "med-tracker.png",
+        imgStart: false,
+        top: false,
     },
     {
         title: "Lego Pill Sorter",
@@ -40,7 +50,9 @@ export default [
         github: "https://github.com/nabarcala/PillSort",
         website: "",
         tech: ["Python", "OpenCV", "Raspberry Pi"],
-        image: "lego.jpg"
+        image: "lego.jpg",
+        imgStart: true,
+        top: false,
     },
     {
         title: "Senior Design Capstone Project",
@@ -48,6 +60,8 @@ export default [
         github: "https://github.com/nabarcala/SOFF",
         website: "",
         tech: ["Python", "Java", "PyTorch"],
-        image: "soff.png"
+        image: "soff.png",
+        imgStart: false,
+        top: true,
     },
 ];
