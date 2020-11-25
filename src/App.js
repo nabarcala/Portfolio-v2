@@ -1,21 +1,9 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from "styled-components";
 
 import GlobalStyle from './globalStyles';
-import { lightTheme, darkTheme } from './themes/theme';
 
-// import NavBar from './components/NavBar';
-// import './components/Stars.css';
-
-// import './App.css';
-// import About from './components/About';
-// import Banner from './components/Banner';
-// import Portfolio from './components/Portfolio';
-// import Services from './components/Services';
-
-
-import { Navbar } from './components'; 
 import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
 import { linkData } from './components/Footer/Data';
@@ -44,7 +32,9 @@ function App() {
   //     // $("html, body").animate({ scrollTop: 0 }, "slow");
   // };
 
-  const [theme, setTheme] = useState({ mode: 'dark' });
+  // const [theme, setTheme] = useState({ mode: 'dark' });
+
+  const [theme] = useState({ mode: 'dark' });
 
   return (
     <ThemeProvider theme={ theme }>

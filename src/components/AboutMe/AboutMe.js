@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Container, Button, Paragraph, Subtitle, SectionRow, SectionColLeft, SectionColRight } from '../../globalStyles';
+import { Container, Paragraph, Subtitle, SectionRow, SectionColLeft, SectionColRight } from '../../globalStyles';
 import { 
     AboutContainer
 } from './AboutMe.elements';

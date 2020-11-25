@@ -1,14 +1,9 @@
-import { Link } from 'react-router-dom';
+
 import styled from 'styled-components';
-import { Image, Transformation } from 'cloudinary-react';
+import { Image } from 'cloudinary-react';
 import 
 { 
-    Container,
-    backgroundColor,
     backgroundDark,
-    backgroundLight,
-    highlightColor,
-    highlightDark,
     colorWhite
 } from '../../globalStyles';
 

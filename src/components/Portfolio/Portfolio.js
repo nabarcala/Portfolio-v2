@@ -1,23 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Image, Transformation } from 'cloudinary-react';
+// import { Link } from 'react-router-dom';
+// import { Image, Transformation } from 'cloudinary-react';
 import project from '../../pages/Home/projects-data';
-import { Container, Button, Title, Subtitle, SectionRow, SectionColLeft, SectionColRight, Paragraph } from '../../globalStyles';
+import { Container, Button, Subtitle, SectionRow, SectionColLeft, SectionColRight, Paragraph } from '../../globalStyles';
 import { 
     PortfolioContainer,
-    TextWrapper,
     ProjectsContainer,
     TopProjects,
     OtherProjects,
-    ProjectCard,
-    ProjectImage,
     ProjectName,
-    ProjectBtns,
-    ImgWrapper,
-    Img,
-    ProjectText,
-    SectionColImg,
-    Description
+    ProjectBtns
 } from './Portfolio.elements';
 
 const Portfolio = ({ title, subtitle, imgStart }) => {
@@ -30,7 +22,7 @@ const Portfolio = ({ title, subtitle, imgStart }) => {
 
             if(item.top) { 
                 topProjects.push(
-                    <>
+                    <div key={i}>
                         <ProjectName> {item.title} </ProjectName>
                         <Paragraph> {item.description} </Paragraph>
                         
@@ -50,7 +42,7 @@ const Portfolio = ({ title, subtitle, imgStart }) => {
                                 // <a className="border-pink link" href={project.github}>GitHub</a> 
                             }
                         </ProjectBtns> 
-                    </>
+                    </div>
                 );
             }
         }
@@ -63,9 +55,9 @@ const Portfolio = ({ title, subtitle, imgStart }) => {
         for(let i = 0; i < project.length; i++) {
             const item = project[i];
 
-            if(item.top == false) { 
+            if(item.top === false) { 
                 otherProjects.push(
-                    <>
+                    <div key={i}>
                         <ProjectName> {item.title} </ProjectName>
                         <Paragraph> {item.description} </Paragraph>
                         
@@ -85,7 +77,7 @@ const Portfolio = ({ title, subtitle, imgStart }) => {
                                 // <a className="border-pink link" href={project.github}>GitHub</a> 
                             }
                         </ProjectBtns> 
-                    </>
+                    </div>
                 );
             }
         }

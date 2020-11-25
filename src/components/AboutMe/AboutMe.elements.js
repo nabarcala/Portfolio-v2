@@ -1,15 +1,6 @@
-import { Link } from 'react-router-dom';
+
 import styled from 'styled-components';
-import 
-{ 
-    Container,
-    backgroundColor,
-    backgroundDark,
-    backgroundLight,
-    highlightColor,
-    highlightDark,
-    colorWhite
-} from '../../globalStyles';
+
 
 export const AboutContainer = styled.div`
     height: 100%;

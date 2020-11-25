@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Button, Title, Subtitle } from '../../globalStyles';
+import { Title, Subtitle } from '../../globalStyles';
 import { 
     ServicesContainer,
     TextWrapper

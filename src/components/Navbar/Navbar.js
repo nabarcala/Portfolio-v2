@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { ThemeProvider } from 'styled-components';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Button } from '../../globalStyles';
-import { lightTheme, darkTheme } from '../../themes/theme';
 import { 
     Nav, 
     NavbarContainer, 

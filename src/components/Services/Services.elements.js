@@ -1,14 +1,8 @@
-import { Link } from 'react-router-dom';
+
 import styled from 'styled-components';
 import 
 { 
-    Container,
-    backgroundColor,
-    backgroundDark,
-    backgroundLight,
-    highlightColor,
-    highlightDark,
-    colorWhite
+    backgroundColor
 } from '../../globalStyles';
 
 export const ServicesContainer = styled.div`
@@ -16,7 +10,6 @@ export const ServicesContainer = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-    /* max-width: 540px; */
     padding-top: 54px;
     padding-bottom: 60px;
     display: flex;

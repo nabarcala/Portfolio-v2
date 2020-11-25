@@ -2,9 +2,6 @@ import styled from 'styled-components';
 import 
 { 
     backgroundColor,
-    backgroundDark,
-    backgroundLight,
-    highlightColor,
     highlightDark,
     colorWhite
 } from '../../globalStyles';

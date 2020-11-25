@@ -8,11 +8,7 @@ import
     backgroundColor,
     backgroundDark,
     backgroundWhite,
-    backgroundLight,
     highlightColor,
-    highlightDark,
-    colorWhite,
-    colorDark
 } from '../../globalStyles';
 
 export const Nav = styled.nav`

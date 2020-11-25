@@ -1,14 +1,8 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { FaLinkedinIn, FaGithub, FaCodepen } from 'react-icons/fa';
 import styled from 'styled-components';
 import 
 { 
-    Container,
-    backgroundColor,
-    backgroundDark,
-    backgroundLight,
-    highlightColor,
-    highlightDark,
     colorWhite
 } from '../../globalStyles';
 
@@ -16,11 +10,6 @@ export const FooterContainer = styled.div`
     padding: 4rem 0 2rem 0;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* font-size: 1.2rem; */
-    /* position: sticky; */
-    /* top: 0; */
-    /* z-index: 999; */
 `;
 
 export const FooterLinks = styled.ul`
