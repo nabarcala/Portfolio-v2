@@ -31,6 +31,7 @@ export const servicesData = {
 export const aboutData = {
     title: 'Learn More About My Experience',
     subtitle: 'About Me',
-    paragraphOne: 'Computer Science graduate seeking a Software Developer role, located in Florida. I primarily use Python and Flask to create web applications. Come check out some of my other projects below.',
-    paragraphTwo: '',
+    paragraphOne: "I am a motivated individual with a strong work ethic and ability to work independently. I have strong organizational and team collaboration skills with experience in improving processes.",
+    paragraphTwo: "I graduated from Florida Atlantic University with a Bachelor's in Computer Science. I have hands-on experience designing and developing web and software applications like single-page and mobile-friendly web applications. I have a thoughrough understanding of object-oriented design and programming, and I aim to use my skills to support software engineering projects and create even more amazing web applications.",
+    paragraphThree: "I am looking to expand my skill set and provide value to a hard-working team. I am seeking a Software Developer role where I can provide value to a hard-working team. Because I enjoy being able to learn new languages and development techniques, I am also looking for opportunities to gain new knowldge and expand my skill set with any that are willing to share their experience. ",
 }

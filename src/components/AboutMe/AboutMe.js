@@ -4,7 +4,7 @@ import {
     AboutContainer
 } from './AboutMe.elements';
 
-const AboutMe = ({ subtitle, title, paragraphOne, paragraphTwo }) => {
+const AboutMe = ({ subtitle, title, paragraphOne, paragraphTwo, paragraphThree }) => {
     return (
         <AboutContainer>
             <Container>
@@ -17,6 +17,7 @@ const AboutMe = ({ subtitle, title, paragraphOne, paragraphTwo }) => {
                     <SectionColRight>
                         <Paragraph> {paragraphOne} </Paragraph>
                         <Paragraph> {paragraphTwo} </Paragraph>
+                        <Paragraph> {paragraphThree} </Paragraph>
                     </SectionColRight>
 
                 </SectionRow>
