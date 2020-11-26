@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import { BsArrowRightShort, BsArrowRight } from 'react-icons/bs';
+import { BsArrowRightShort } from 'react-icons/bs';
 // All global styles in this file
 
 export const backgroundColor = '#222831';

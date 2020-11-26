@@ -10,12 +10,12 @@ import {
     OtherProjects,
     ProjectName,
     ProjectBtns,
-    SectionColImg,
+    // SectionColImg,
     ImgWrapper, 
     ProjectImage, 
     ProjectText, 
-    SectionCol,
-    Description,
+    // SectionCol,
+    // Description,
     MultiImages
 } from './Portfolio.elements';
 
