@@ -26,13 +26,14 @@ export const SectionRow = styled.div`
 `;
 
 export const SectionColImg = styled.div`
-    /* background-color: blue; */
-    margin: auto;
+    /* background-color: blue;  */
+    /* margin: auto; */
     flex: 1;
     max-width: 70%;
     flex-basis: 70%;
+    padding: 10px;
 
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 1000px) {
         max-width: 100%;
         flex-basis: 100%;
         display: flex;
@@ -48,11 +49,12 @@ export const SectionCol = styled.div`
     max-width: 30%;
     flex-basis: 30%;
 
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 1000px) {
         max-width: 100%;
         flex-basis: 100%;
         display: flex;
         justify-content: left;
+        margin-top: -25px;
     }
 `;
 
@@ -82,9 +84,19 @@ export const ProjectsContainer = styled.div`
     overflow: hidden; */
 `;
 
+export const MultiImages = styled.div`
+    margin: 20px;
+    background-color: red;
+
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+    overflow: hidden; */
+`;
+
 export const TopProjects = styled.div`
     height: 100%;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 
     @media screen and (max-width: 960px) {
         height: 100%;

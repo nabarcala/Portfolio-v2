@@ -1,6 +1,8 @@
 
 export const globalData = {
     darkTheme: false,
+    resumeLink: require('../../files/nb-resume.pdf'),
+    resumeName: 'nb-resume.pdf',
 }
 
 export const homeData = {
@@ -9,7 +11,7 @@ export const homeData = {
     imgStart: '',  
     resumeButtonLabel: 'Resume', 
     portfolioButtonLabel: 'Portfolio',
-    description: 'Computer Science graduate seeking a Software Developer role, located in Florida. I primarily use Python and Flask to create web applications. Come check out some of my other projects below.', 
+    description: 'Computer Science graduate seeking a Software Developer role, located in Florida. I primarily use Flask and React to create web applications. Come check out some of my other projects below.', 
     headline: 'Natacha Barcala', 
     title: 'Software Developer, Web Developer',
     typewriterOptions: '["Front End Engineer", "Web Developer", "Software Developer", ]',

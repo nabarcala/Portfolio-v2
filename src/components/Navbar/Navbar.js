@@ -31,6 +31,21 @@ const Navbar = () => {
         }
     }
 
+    // Active and remove active menu
+    const navLink = document.querySelectorAll('#NavLinks');
+
+    const linkAction = () => {
+        // Active link
+        navLink.forEach(n => n.classList.remove('active'));
+        this.classList.add('active');
+
+        // remove menu mobile
+        // const navMenu = document.getElementById('nav-menu')
+        // navMenu.classList.remove('show')
+    };
+
+    navLink.forEach(n => n.addEventListener('click', linkAction));
+
     useEffect(() => {
         showButton();
     }, []);
@@ -53,17 +68,38 @@ const Navbar = () => {
                         {/* NavMenu */}
                         <NavMenu onClick={handleClick} click={click}>
                             <NavItem>
-                                <NavLinks to='/'>Home</NavLinks>
+                                <NavLinks 
+                                    to='home'
+                                    id="NavLinks"
+                                    activeClass="active"
+                                    smooth={true}
+                                    duration={500} >
+                                        Home
+                                </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='/services'>Services</NavLinks>
+                                <NavLinks 
+                                    to='about'
+                                    activeClass="active"
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-100} >
+                                        About Me
+                                </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='/portfolio'>Portfolio</NavLinks>
+                                <NavLinks
+                                    to='portfolio'
+                                    activeClass="active"
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-30} >
+                                        Portfolio
+                                </NavLinks>
                             </NavItem>
-                            <NavItem>
+                            {/* <NavItem>
                                 <NavLinks to='/contact'>Contact Me</NavLinks> 
-                            </NavItem>
+                            </NavItem> */}
 
                             <NavBtn>
                                 {button ? (

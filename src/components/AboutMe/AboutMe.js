@@ -1,12 +1,12 @@
 import React from 'react';
-import { Container, Paragraph, Subtitle, SectionRow, SectionColLeft, SectionColRight } from '../../globalStyles';
+import { Container, Paragraph, Subtitle, SectionRow, SectionColLeft, SectionColRight, ArrowRight, ArrowLink } from '../../globalStyles';
 import { 
     AboutContainer
 } from './AboutMe.elements';
 
-const AboutMe = ({ subtitle, title, paragraphOne, paragraphTwo, paragraphThree }) => {
+const AboutMe = ({ subtitle, title, paragraphOne, paragraphTwo, paragraphThree, resumeLink, resumeName }) => {
     return (
-        <AboutContainer>
+        <AboutContainer id="about">
             <Container>
                 <SectionRow> 
 
@@ -18,6 +18,14 @@ const AboutMe = ({ subtitle, title, paragraphOne, paragraphTwo, paragraphThree }
                         <Paragraph> {paragraphOne} </Paragraph>
                         <Paragraph> {paragraphTwo} </Paragraph>
                         <Paragraph> {paragraphThree} </Paragraph>
+
+                        <br></br>
+
+                        <Paragraph> 
+                            <ArrowLink href={resumeLink} download={resumeName}>
+                                Download my resume <ArrowRight></ArrowRight>
+                            </ArrowLink>
+                        </Paragraph>
                     </SectionColRight>
 
                 </SectionRow>

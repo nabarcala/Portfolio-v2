@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import Typewriter from 'typewriter-effect';
 import { Container, Button } from '../../globalStyles';
 import { 
@@ -15,10 +15,10 @@ import {
     BannerBtns
 } from './Sections.elements';
 
-const Sections = ({ banner, primary, imgStart, resumeButtonLabel, portfolioButtonLabel, description, headline, title, typewriterOptions, start, img, alt }) => {
+const Sections = ({ banner, primary, imgStart, resumeButtonLabel, portfolioButtonLabel, description, headline, resumeLink, resumeName, start, img, alt }) => {
     return (
         <>
-            <Sect banner={banner}>
+            <Sect banner={banner} id="home">
                 <Container>
                     <SectionRow imgStart={imgStart}>
 
@@ -41,12 +41,21 @@ const Sections = ({ banner, primary, imgStart, resumeButtonLabel, portfolioButto
                                 <Banner> {description} </Banner>
 
                                 <BannerBtns>
-                                    <Link to='/portfolio'>
+
+                                    <Link
+                                        to='portfolio'
+                                        activeClass="active"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-30} >
+                                            <Button big frontLarge> {portfolioButtonLabel} </Button>
+                                    </Link>
+                                    {/* <Link to='/portfolio'>
                                         <Button big frontLarge> {portfolioButtonLabel} </Button>
-                                    </Link>
-                                    <Link to='/resume'>
+                                    </Link> */}
+                                    <a href={resumeLink} download={resumeName}>
                                         <Button big frontLarge primary={primary}> {resumeButtonLabel} </Button>
-                                    </Link>
+                                    </a>
                                 </BannerBtns>
                                 
                             </TextWrapper>

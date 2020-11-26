@@ -1,5 +1,6 @@
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { RiPlantFill } from 'react-icons/ri';
 import styled from 'styled-components';
 import 
@@ -103,6 +104,7 @@ export const NavLinks = styled(Link)`
     text-decoration: none !important;
     padding: 3rem 1rem;
     height: 100%;
+    cursor: pointer;
 
     &:hover {
         color: ${highlightColor} !important; 

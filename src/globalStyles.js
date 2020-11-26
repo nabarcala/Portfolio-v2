@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import { BsArrowRightShort, BsArrowRight } from 'react-icons/bs';
 // All global styles in this file
 
 export const backgroundColor = '#222831';
@@ -161,5 +162,25 @@ export const SectionColRight = styled.div`
         display: flex;
     }
 `;
+
+export const ArrowRight = styled(BsArrowRightShort)`
+    font-size: 40px;
+    margin-bottom: -15px;
+    margin-left: 5px;
+    color: ${highlightColor} !important; 
+    cursor: pointer;
+    transition: .4s ease-in-out;
+`;
+
+export const ArrowLink = styled.a`
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover ${ArrowRight} {
+        color: ${highlightColor};margin-left: 15px;
+    }
+`;
+
+
 
 export default GlobalStyle;
