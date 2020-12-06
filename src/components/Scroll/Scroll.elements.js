@@ -10,7 +10,14 @@ import
     backgroundDark,
     backgroundWhite,
     highlightColor,
+    highlightDark,
 } from '../../globalStyles';
+
+export const ScrollArrow = styled(FiArrowUp)`
+    background-color: transparent;
+    font-size: 20px;
+    margin: 10px;
+`;
 
 export const ScrollContainer = styled(Link)`
     background-color: ${highlightColor};
@@ -35,61 +42,12 @@ export const ScrollContainer = styled(Link)`
             opacity: 0%;
             bottom: -10px;
         }
-        /* 50% {
-            opacity: 40%;
-            bottom: 10px;
-        } */
-        /* 100% {
-            opacity: 50%;
-        } */
     }
-
-    &:visited {
-        animation: fadeOut 0.5s;
-        animation-delay: .5s;
-        
-        @keyframes fadeOut {
-        100% {
-            opacity: 0%;
-            bottom: -10px;
-        }
-    }
-    }
-
-    
-`;
-
-export const ScrollArrow = styled(FiArrowUp)`
-    background-color: transparent;
-    font-size: 20px;
-    margin: 10px;
-
-    &:
-`;
-
-export const ScrollToTop = styled(Link)`
-    /* color: ${({theme}) => theme.background}; */
-    display: flex;
-    align-items: center;
-    text-decoration: none !important;
-    padding: 3rem 1rem;
-    height: 100%;
-    cursor: pointer;
 
     &:hover {
-        color: ${highlightColor} !important; 
-    }
-    @media screen and (max-width: 960px) {
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-        text-decoration: none;
-
-        &:hover {
-            color: ${highlightColor} !important; 
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
+        background-color: ${highlightDark};
+        transition: ease-in-out 0.5s;
     }
 `;
+
+
