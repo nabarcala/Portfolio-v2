@@ -14,6 +14,7 @@ import {
     ImgWrapper, 
     ProjectImage, 
     ProjectText, 
+    ProjectLink,
     // SectionCol,
     // Description,
     MultiImages
@@ -65,88 +66,41 @@ const Portfolio = ({ title, subtitle, imgStart, start }) => {
 
                         <MultiImages>
                             <ImgWrapper start={start}>
-                                <ProjectImage publicId={item.image} cloudName="nbrcl"></ProjectImage>
+
+                                    { item.website !== "" ? (
+                                        <a href={item.website}>
+                                            <ProjectImage publicId={item.image} cloudName="nbrcl"></ProjectImage>
+                                        </a>
+                                    ) : (
+                                        <a href={item.github}>
+                                            <ProjectImage publicId={item.image} cloudName="nbrcl"></ProjectImage>
+                                        </a>
+                                    )}
+
                             </ImgWrapper>
                         </MultiImages>
                         <ProjectText>
                             <ProjectName> 
-                                <ArrowLink>
-                                    {item.title} <ArrowRight></ArrowRight>
-                                </ArrowLink>
+                                {/* <ProjectLink>  */}
+                                    
+                                    { item.website !== "" ? (
+                                        <ProjectLink href={item.website}>
+                                            {item.title} 
+                                        </ProjectLink>
+                                    ) : (
+                                        <ProjectLink href={item.github}>
+                                            {item.title} 
+                                        </ProjectLink>
+                                    )}
+                                    {/* <ArrowRight></ArrowRight> */}
+                                {/* </ArrowLink> */}
                                     
                             </ProjectName>
                             <Paragraph> {item.description} </Paragraph>
-                            
-                            {/* <ProjectBtns> 
-                                { item.website !== "" && (
-                                    <a href={item.website}>
-                                        <Button small frontSmall primary="false"> Live </Button>
-                                    </a>
-                                    // <a className="border-pink link" href={item.website}>Live</a>
-                                )} 
-
-                                { item.github !== "" &&(
-                                    <a href={item.github}>
-                                        <Button small frontSmall primary="false"> GitHub </Button>
-                                    </a>
-                                )
-                                    // <a className="border-pink link" href={project.github}>GitHub</a> 
-                                }
-                            </ProjectBtns> */}
+                           
                         </ProjectText>
 
 
-                        {/* <SectionRow imgStart={imgStart}>
-                            <SectionColImg>
-                                <ImgWrapper start={start}>
-                                    <ProjectImage publicId={item.image} cloudName="nbrcl"></ProjectImage>
-                                </ImgWrapper>
-                            </SectionColImg>
-                            <SectionCol>
-                                <ProjectText>
-                                    <ProjectName> {item.title} </ProjectName>
-                                    <Paragraph> {item.description} </Paragraph>
-                                    
-                                    <ProjectBtns> 
-                                        { item.website !== "" && (
-                                            <a href={item.website}>
-                                                <Button small frontSmall primary="false"> Live </Button>
-                                            </a>
-                                            // <a className="border-pink link" href={item.website}>Live</a>
-                                        )} 
-
-                                        { item.github !== "" &&(
-                                            <a href={item.github}>
-                                                <Button small frontSmall primary="false"> GitHub </Button>
-                                            </a>
-                                        )
-                                            // <a className="border-pink link" href={project.github}>GitHub</a> 
-                                        }
-                                    </ProjectBtns>
-                                </ProjectText>
-                            </SectionCol>
-                        </SectionRow> */}
-
-
-                        {/* <ProjectName> {item.title} </ProjectName>
-                        <Paragraph> {item.description} </Paragraph>
-                        
-                        <ProjectBtns> 
-                            { item.website !== "" && (
-                                <a href={item.website}>
-                                    <Button small frontSmall primary="false"> Live </Button>
-                                </a>
-                                // <a className="border-pink link" href={item.website}>Live</a>
-                            )} 
-
-                            { item.github !== "" &&(
-                                <a href={item.github}>
-                                    <Button small frontSmall primary="false"> GitHub </Button>
-                                </a>
-                            )
-                                // <a className="border-pink link" href={project.github}>GitHub</a> 
-                            }
-                        </ProjectBtns>  */}
                     </div>
                 );
             }
@@ -171,15 +125,12 @@ const Portfolio = ({ title, subtitle, imgStart, start }) => {
                                 <a href={item.website}>
                                     <Button small frontSmall primary="false"> Live </Button>
                                 </a>
-                                // <a className="border-pink link" href={item.website}>Live</a>
                             )} 
-    
                             { item.github !== "" &&(
                                 <a href={item.github}>
                                     <Button small frontSmall primary="false"> GitHub </Button>
                                 </a>
                             )
-                                // <a className="border-pink link" href={project.github}>GitHub</a> 
                             }
                         </ProjectBtns> 
                     </div>
@@ -222,40 +173,6 @@ const Portfolio = ({ title, subtitle, imgStart, start }) => {
                 </OtherProjects>
 
             </Container>
-
-        
-                {/* { project.map((project, index, start) => (
-                    <SectionRow imgStart={imgStart}>
-
-                        <SectionColImg>
-                            <ImgWrapper start={start}>
-                                <ProjectImage publicId={project.image} cloudName="nbrcl"></ProjectImage>
-                            </ImgWrapper>
-                        </SectionColImg>
-
-                        <SectionCol>
-                            <ProjectText>
-                                <ProjectName> {project.title} </ProjectName>
-                                <Description> {project.description} </Description>
-                                <ProjectBtns> 
-                                    { project.website !== "" && (
-                                        <a href={project.website}>
-                                            <Button small frontSmall primary="false"> Live </Button>
-                                        </a>
-                                    )} 
-
-                                    { project.github !== "" &&(
-                                        <a href={project.github}>
-                                            <Button small frontSmall primary="false"> GitHub </Button>
-                                        </a>
-                                    )
-                                        // <a className="border-pink link" href={project.github}>GitHub</a> 
-                                    }
-                                </ProjectBtns>
-                            </ProjectText>
-                        </SectionCol>
-                    </SectionRow>
-                )) } */}
 
         </PortfolioContainer>
     )

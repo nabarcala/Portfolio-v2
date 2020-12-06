@@ -4,6 +4,7 @@ import { Image } from 'cloudinary-react';
 import 
 { 
     backgroundDark,
+    highlightColor,
     colorWhite
 } from '../../globalStyles';
 
@@ -149,7 +150,8 @@ export const ProjectImage = styled(Image)`
 export const ProjectText = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 20px 20px;
+    /* margin: 20px 20px; */
+    margin: -40px 20px 80px 20px;
 `;
 
 export const ProjectName = styled.div`
@@ -160,6 +162,16 @@ export const ProjectName = styled.div`
     /* @media screen and (max-width: 768px) {
         margin-top: 0px;
     } */
+`;
+
+export const ProjectLink = styled.a`
+    text-decoration: none !important;
+    cursor: pointer;
+
+    &:hover  {
+        color: ${highlightColor};
+        /* margin-left: 15px; */
+    }
 `;
 
 export const Description = styled.p`

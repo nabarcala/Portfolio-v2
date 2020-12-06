@@ -173,14 +173,13 @@ export const ArrowRight = styled(BsArrowRightShort)`
 `;
 
 export const ArrowLink = styled.a`
-    text-decoration: none;
+    text-decoration: none !important;
     cursor: pointer;
 
     &:hover ${ArrowRight} {
         color: ${highlightColor};margin-left: 15px;
     }
 `;
-
 
 
 export default GlobalStyle;

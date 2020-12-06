@@ -1,5 +1,6 @@
 import React from 'react'
 import { AboutMe, Navbar, Portfolio, Sections } from '../../components'
+import { Scroll } from '../../components/Scroll/Scroll';
 // import { lightTheme, darkTheme } from '../../themes/theme';
 import { globalData, homeData, aboutData, portfolioData } from './Data';
 
@@ -8,10 +9,11 @@ const Home = () => {
         // <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
             <>
                 <Navbar />
-                <Sections {...homeData } { ...globalData} />
-                
-                <AboutMe {...aboutData} { ...globalData} />
 
+                <Scroll /> 
+
+                <Sections {...homeData } { ...globalData} />
+                <AboutMe {...aboutData} { ...globalData} />
                 <Portfolio {...portfolioData} { ...globalData} />
 
                 {/* <Services {...servicesData} { ...globalData} /> */}
