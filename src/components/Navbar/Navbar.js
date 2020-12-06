@@ -44,7 +44,7 @@ const Navbar = () => {
         // navMenu.classList.remove('show')
     };
 
-    navLink.forEach(n => n.addEventListener('click', linkAction));
+    // navLink.forEach(n => n.addEventListener('click', linkAction));
 
     useEffect(() => {
         showButton();
@@ -69,6 +69,7 @@ const Navbar = () => {
                         <NavMenu onClick={handleClick} click={click}>
                             <NavItem>
                                 <NavLinks 
+                                    onClick={handleClick}
                                     to='home'
                                     id="NavLinks"
                                     activeClass="active"
@@ -79,6 +80,7 @@ const Navbar = () => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks 
+                                    onClick={handleClick}
                                     to='about'
                                     activeClass="active"
                                     smooth={true}
@@ -89,6 +91,7 @@ const Navbar = () => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks
+                                    onClick={handleClick}
                                     to='portfolio'
                                     activeClass="active"
                                     smooth={true}
@@ -101,19 +104,26 @@ const Navbar = () => {
                                 <NavLinks to='/contact'>Contact Me</NavLinks> 
                             </NavItem> */}
 
-                            <NavBtn>
+                            {/* <NavBtn>
                                 {button ? (
-                                    <NavBtnLink to="/resume">
+                                    <NavBtnLink to='about'
+                                        activeClass="active"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-100}>
                                         <Button primary>RESUME</Button>
                                     </NavBtnLink>
                                 ) : (
-                                    <NavBtnLink to="/resume">
-                                        {/* <Button onClick={closeMobileMenu} fontBig primary>RESUME</Button> */}
-                                        <Button fontBig primary>RESUME</Button>
+                                    <NavBtnLink to='about'
+                                        activeClass="active"
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-100}>
+                                            <Button fontBig primary>RESUME</Button> 
                                     </NavBtnLink>
                                 )}
                                 
-                            </NavBtn>
+                            </NavBtn> */}
                             {/* End NavMenu */}
 
                         </NavMenu>

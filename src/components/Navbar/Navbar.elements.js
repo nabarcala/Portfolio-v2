@@ -21,9 +21,14 @@ export const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 999;
+
+    @media screen and (min-width: 960px) {
+        position: sticky;
+        height: 100%;
+    }
 `;
 
 export const NavbarContainer = styled(Container)`
@@ -77,7 +82,7 @@ export const NavMenu = styled.ul`
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         position: absolute;
         top: 80px;
         // If memu is clicked, show the menu
@@ -85,7 +90,7 @@ export const NavMenu = styled.ul`
         left: ${({click}) => (click ? 0 : '-100%')};
         opacity: 1;
         transition: all .5s ease;
-        background: ${backgroundDark};
+        /* background: ${backgroundDark}; */
     }
 `;
 

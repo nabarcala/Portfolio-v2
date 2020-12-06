@@ -8,7 +8,7 @@ const Home = () => {
     return (
         // <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
             <>
-                <Navbar />
+                <Navbar/>
 
                 <Scroll /> 
 
