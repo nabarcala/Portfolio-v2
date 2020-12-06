@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { Button } from '../../globalStyles';
 import { 
     Nav, 
     NavbarContainer, 
@@ -11,46 +11,40 @@ import {
     NavMenu,
     NavItem,
     NavLinks,
-    NavBtn,
-    NavBtnLink
 } from './Navbar.elements';
 
 const Navbar = () => {
     const [click, setCick] = useState(false);
-    const [button, setButton] = useState(true);
+    // const [button, setButton] = useState(true);
     
     const handleClick = () => setCick(!click);
 
-    const showButton = () => 
-    {
-        // Set to false if in mobile mode
-        if(window.innerWidth <= 960) {
-            setButton(false);
-        } else {
-            setButton(true);
-        }
-    }
+    // const showButton = () => 
+    // {
+    //     // Set to false if in mobile mode
+    //     if(window.innerWidth <= 960) {
+    //         setButton(false);
+    //     } else {
+    //         setButton(true);
+    //     }
+    // }
 
     // Active and remove active menu
-    const navLink = document.querySelectorAll('#NavLinks');
+    // const navLink = document.querySelectorAll('#NavLinks');
 
-    const linkAction = () => {
-        // Active link
-        navLink.forEach(n => n.classList.remove('active'));
-        this.classList.add('active');
-
-        // remove menu mobile
-        // const navMenu = document.getElementById('nav-menu')
-        // navMenu.classList.remove('show')
-    };
+    // const linkAction = () => {
+    //     // Active link
+    //     navLink.forEach(n => n.classList.remove('active'));
+    //     this.classList.add('active');
+    // };
 
     // navLink.forEach(n => n.addEventListener('click', linkAction));
 
-    useEffect(() => {
-        showButton();
-    }, []);
+    // useEffect(() => {
+    //     showButton();
+    // }, []);
 
-    window.addEventListener('resize', showButton);
+    // window.addEventListener('resize', showButton);
 
     return (
         <>

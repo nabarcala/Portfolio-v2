@@ -5,10 +5,6 @@ import { FiArrowUp } from 'react-icons/fi';
 import styled from 'styled-components';
 import 
 { 
-    Container,
-    backgroundColor,
-    backgroundDark,
-    backgroundWhite,
     highlightColor,
     highlightDark,
 } from '../../globalStyles';

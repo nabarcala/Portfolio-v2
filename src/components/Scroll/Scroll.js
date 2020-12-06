@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import cn from "classnames";
+import React, { useState } from 'react';
 import { 
     ScrollContainer,
     ScrollArrow,

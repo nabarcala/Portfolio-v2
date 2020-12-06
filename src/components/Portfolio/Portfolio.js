@@ -2,7 +2,7 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 // import { Image, Transformation } from 'cloudinary-react';
 import project from '../../pages/Home/projects-data';
-import { Container, Button, Subtitle, SectionRow, SectionColLeft, SectionColRight, Paragraph, ArrowRight, ArrowLink } from '../../globalStyles';
+import { Container, Button, Subtitle, SectionRow, SectionColLeft, SectionColRight, Paragraph,  } from '../../globalStyles';
 import { 
     PortfolioContainer,
     ProjectsContainer,
@@ -10,13 +10,10 @@ import {
     OtherProjects,
     ProjectName,
     ProjectBtns,
-    // SectionColImg,
     ImgWrapper, 
     ProjectImage, 
     ProjectText, 
     ProjectLink,
-    // SectionCol,
-    // Description,
     MultiImages
 } from './Portfolio.elements';
 
