@@ -1,11 +1,13 @@
 
 
-Second iteration of my personal portfolio, created with React, to show my current projects and skills.
+Second iteration of my personal portfolio, created with React, to show my current projects and skills. Made with reusable components.
 Previous iteration can be found [here](https://github.com/nabarcala/Python-and-Flask-Ex).
 
 ## Tech
 * [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 * [React Bootstrap](https://react-bootstrap.github.io/) - The most popular front-end framework. React-Bootstrap replaces the Bootstrap JavaScript.
+* [Styled Components](https://styled-components.com/) - Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress
+*  React Hooks and React Router
 
 ## Acknowledgements
 * [React Icons](https://react-icons.github.io/react-icons/) - Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
