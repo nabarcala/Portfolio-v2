@@ -14,7 +14,7 @@ export default [
     }, 
     {
         title: "Portfolio V1",
-        description: "First iteration of my personal portfolio created with Python and Flask.",
+        description: "First iteration of my personal portfolio website created with Python and Flask, where I organized the Flask application into modular components with Blueprints. Used a relational database management system to add, remove, and modify data.",
         github: "https://github.com/nabarcala/Python-and-Flask-Ex",
         website: "https://nb-portfolio.herokuapp.com/",
         tech: ["Python", "Flask"],
