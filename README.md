@@ -1,4 +1,5 @@
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/09017718-9a9c-4387-960c-3854c3f1f805/deploy-status)](https://app.netlify.com/sites/eager-heisenberg-eb546c/deploys)
 
 Second iteration of my personal portfolio, created with React, to show my current projects and skills. Made with reusable components.
 Previous iteration can be found [here](https://github.com/nabarcala/Python-and-Flask-Ex).
