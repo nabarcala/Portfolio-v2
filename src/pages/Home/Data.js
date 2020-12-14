@@ -37,3 +37,7 @@ export const aboutData = {
     paragraphTwo: "I graduated from Florida Atlantic University with a Bachelor's in Computer Science. I have hands-on experience designing and developing web and software applications like single-page and mobile-friendly web applications. I have a thoughrough understanding of object-oriented design and programming, and I aim to use my skills to support software engineering projects and create even more amazing web applications.",
     paragraphThree: "I am looking to expand my skill set and provide value to a hard-working team. I am seeking a Software Developer role where I can provide value to a hard-working team. Because I enjoy being able to learn new languages and development techniques, I am also looking for opportunities to gain new knowldge and expand my skill set with any that are willing to share their experience. ",
 }
+
+export const contactData = {
+    title: 'Contact Me',
+}

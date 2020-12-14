@@ -7,7 +7,7 @@ import
 } from '../../globalStyles';
 
 export const FooterContainer = styled.div`
-    padding: 4rem 0 2rem 0;
+    padding: 8rem 0 4rem 0;
     display: flex;
     justify-content: center;
 `;

@@ -91,6 +91,7 @@ export const Banner = styled.p`
 
 export const BannerBtns = styled.div`
     margin-top: 65px;
+    margin-left: 20px;
 
     @media screen and (max-width: 960px) {
         margin-top: 35px;

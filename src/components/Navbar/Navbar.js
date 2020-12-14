@@ -94,9 +94,17 @@ const Navbar = () => {
                                         Portfolio
                                 </NavLinks>
                             </NavItem>
-                            {/* <NavItem>
-                                <NavLinks to='/contact'>Contact Me</NavLinks> 
-                            </NavItem> */}
+                            <NavItem>
+                                <NavLinks
+                                    onClick={handleClick}
+                                    to='contact'
+                                    activeClass="active"
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-100} >
+                                        Contact Me
+                                </NavLinks>
+                            </NavItem>
 
                             {/* <NavBtn>
                                 {button ? (

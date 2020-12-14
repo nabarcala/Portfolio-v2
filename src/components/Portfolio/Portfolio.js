@@ -28,39 +28,6 @@ const Portfolio = ({ title, subtitle, imgStart, start }) => {
             if(item.top) { 
                 topProjects.push(
                     <div key={i}>
-                        {/* { project.map((project, index, start) => (
-                    
-
-                        <SectionColImg>
-                            <ImgWrapper start={start}>
-                                <ProjectImage publicId={project.image} cloudName="nbrcl"></ProjectImage>
-                            </ImgWrapper>
-                        </SectionColImg>
-
-                        <SectionCol>
-                            <ProjectText>
-                                <ProjectName> {project.title} </ProjectName>
-                                <Description> {project.description} </Description>
-                                <ProjectBtns> 
-                                    { project.website !== "" && (
-                                        <a href={project.website}>
-                                            <Button small frontSmall primary="false"> Live </Button>
-                                        </a>
-                                    )} 
-
-                                    { project.github !== "" &&(
-                                        <a href={project.github}>
-                                            <Button small frontSmall primary="false"> GitHub </Button>
-                                        </a>
-                                    )
-                                        // <a className="border-pink link" href={project.github}>GitHub</a> 
-                                    }
-                                </ProjectBtns>
-                            </ProjectText>
-                        </SectionCol>
-                    </SectionRow>
-                )) } */}
-
                         <MultiImages>
                             <ImgWrapper start={start}>
 

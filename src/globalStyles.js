@@ -52,7 +52,7 @@ export const Container = styled.div`
     padding-left: 50px;
 
     @media screen and (max-width: 960px) {
-        padding-right: 30px;
+        padding-right: 35px;
         padding-left: 30px;
     }
 `;
@@ -64,13 +64,17 @@ export const Button = styled.button`
     white-space: nowrap;
     padding: ${({big}) => (big ? '12px 64px' : '3px 13px')};
     margin: ${({big}) => (big ? '20px 0' : '5px 0')};
-    margin-right: 20px;
+    margin-left: 10px;
     /* color: ${({theme}) => theme.text}; */
     font-size: ${({fontLarge}) => (fontLarge ? '20px' : '14px')};
     outline: none;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+
+    &:nth-of-type(1) {
+        margin-left: 0;
+    }
 
     &:hover {
         transition: all 0.3s ease-in-out;
@@ -132,6 +136,23 @@ export const SectionRow = styled.div`
     flex-direction: ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
 `;
 
+export const SectionCol = styled.div`
+    /* background-color: wheat; */
+    flex: 1;
+    max-width: 45%;
+    flex-basis: 50%;
+    text-align: left;
+    margin-left: 15px;
+    /* margin-top: 15px; */
+
+    @media screen and (max-width: 960px) {
+        max-width: 100%;
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+`;
+
 export const SectionColLeft = styled.div`
     /* background-color: wheat; */
     flex: 1;
@@ -182,5 +203,12 @@ export const ArrowLink = styled.a`
     }
 `;
 
+export const MyLink = styled.a`
+    text-decoration: none;
+
+    &:hover {
+        color: ${highlightColor}; 
+    }
+`;
 
 export default GlobalStyle;
