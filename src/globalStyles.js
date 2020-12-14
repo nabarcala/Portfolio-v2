@@ -64,7 +64,8 @@ export const Button = styled.button`
     white-space: nowrap;
     padding: ${({big}) => (big ? '12px 64px' : '3px 13px')};
     margin: ${({big}) => (big ? '20px 0' : '5px 0')};
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     /* color: ${({theme}) => theme.text}; */
     font-size: ${({fontLarge}) => (fontLarge ? '20px' : '14px')};
     outline: none;
@@ -72,7 +73,7 @@ export const Button = styled.button`
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 
-    &:nth-of-type(1) {
+    &:nth-child() { 
         margin-left: 0;
     }
 
